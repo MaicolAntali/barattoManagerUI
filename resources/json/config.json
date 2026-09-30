@@ -1,0 +1,26 @@
+{
+  "app": {
+    "name": "BarattoManager",
+    "version": "5.0.0 ~ 2"
+  },
+  "file": {
+    "users": "users.json",
+    "categories": "categories.json",
+    "meets": "meets.json",
+    "articles": "articles.json",
+    "trades": "trades.json"
+  },
+  "password": {
+    "default_pwd": "123"
+  },
+  "default_category": [
+    {
+      "name": "Stato di conservazione",
+      "required": true
+    },
+    {
+      "name": "Descrizione",
+      "required": true
+    }
+  ]
+}

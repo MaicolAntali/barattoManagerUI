@@ -1,0 +1,33 @@
+package com.barattoManager.ui.mvc.dialogs.select.selectMeet;
+
+import com.barattoManager.services.meet.Meet;
+
+import javax.swing.*;
+import javax.swing.plaf.basic.BasicComboBoxRenderer;
+import java.awt.*;
+
+/**
+ * Class used to specify the custom renderer for {@link JComboBox}
+ */
+public class MeetComboBoxRenderer extends BasicComboBoxRenderer {
+
+	@Override
+	public Component getListCellRendererComponent(JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+
+		if (value == null)
+			setText(" ");
+		else {
+			var meet = ((Meet) value);
+			setText("%s ~ %s ~ %s ~ [%s-%s]".formatted(
+					meet.getCity(),
+					meet.getSquare(),
+					meet.getDay(),
+					meet.getStartTime(),
+					meet.getEndTime()
+			));
+		}
+
+
+		return this;
+	}
+}
