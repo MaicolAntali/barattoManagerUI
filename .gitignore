@@ -1,3 +1,4 @@
 .idea
 out
 users.json
+.DS_Store

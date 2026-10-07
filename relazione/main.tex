@@ -1,0 +1,35 @@
+\documentclass[12pt,a4paper,hidelinks]{report}
+\input{premable}
+\textwidth=450pt\oddsidemargin=0pt
+\usepackage{booktabs}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, shadows}
+\usepackage{float}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage[italian]{babel}
+\usepackage{csquotes}
+
+
+\begin{document}
+
+\include{title}
+
+\pagenumbering{roman}
+
+\tableofcontents
+
+\clearpage
+
+\pagenumbering{arabic}
+
+\include{Introduzione}
+
+
+\nocite{*}
+
+\printbibliography[heading=bibintoc]
+
+\end{document}
